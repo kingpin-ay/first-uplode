@@ -46,9 +46,9 @@ def playmusic(url):
     # video_path = r'D:\Project\Python\Music\song\Song.mp4'
     # music_path = r'D:\Project\Python\Music\song\Song.mp3'
 
-    basePath = os.path.splitext(File)
-    video = mp.VideoFileClip(os.path.join(basePath + ".mp4"))
-    video.audio.write_audiofile(os.path.join(basePath + ".mp3"))
+    # basePath = os.path.splitext(File)
+    video = mp.VideoFileClip(os.path.join("Song.mp4"))
+    video.audio.write_audiofile(os.path.join("Song.mp3"))
     video.close()
 
     # Playing the music with playsound module 
